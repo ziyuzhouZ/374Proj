@@ -4,6 +4,22 @@ This is an investigation regarding the multitask learning model on demo-based pr
 Since the original dataset is too large. I could not upload it here.
 The dataset can be found at https://www.kaggle.com/datasets/utkalk/large-retail-data-set-for-eda
 
+This is a multitask learning model designed to predict both numeric and categorical properties of products. 
+The model is divided into:
+- Task Group 1: Regression tasks for predicting numeric properties:
+  - Product Rating
+  - Product Review Count
+  - Product Weight
+  - Unit Price
+- Task Group 2: Classification tasks for predicting categorical properties:
+  - Product Brand
+  - Product Size
+  - Product Color
+  - Product Material
+  - Product Category
+
+By sharing layers across these tasks, the model leverages common features to enhance predictive performance.
+
 After download the dataset, you can use separate_data.py to get three csv file of product_info, customer_info and linkning _table
 Then use clean_data.py to clear out all the noises and interfereing data
 
