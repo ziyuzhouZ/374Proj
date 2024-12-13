@@ -136,9 +136,9 @@ if __name__ == "__main__":
     dataset = RetailDataset(db_file='retail_sample_100000.db', sample_frac=1.0)
     input_size = len(dataset.input_columns)
 
-    # ("rating", 1), ("review_count", 1), ("weight", 1), ("price", 1),
     # Task-specific configurations
     tasks = [
+        ("rating", 1), ("review_count", 1), ("weight", 1), ("price", 1),
         ("brand", 2), ("size", 2), ("color", 4), ("material", 3), ("category", 4)
     ]
 
